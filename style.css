@@ -27,10 +27,6 @@ button {
     padding: 5px 10px;
 }
 
-#canvas {
-    border: 5px solid white;
-}
-
 .screen {
     display: none;
 }
