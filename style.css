@@ -1,0 +1,38 @@
+body {
+    background-color: #242424;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    font-size: 12px;
+    width: 100px;
+    height: 35px;
+}
+
+.title {
+    color: green;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.return-home{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: 20px;
+    padding: 5px 10px;
+}
+
+#canvas {
+    border: 5px solid white;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
