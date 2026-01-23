@@ -3,14 +3,20 @@
     <head>
         <title>アニメーション</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animation.css">
     </head>
     <body>
         <button class="return-home" onclick="showScreen('home')">ホームに戻る</button>
         <div id="home" class="screen active">
             <h1 class="title">アニメーション集</h1>
+            <button onclick="showScreen('css')">CSS</button>
             <button onclick="showScreen('grid')">グリッド</button>
             <button onclick="showScreen('graph')">グラフ</button>
             <button onclick="showScreen('segtree')">セグメント木</button>
+        </div>
+        <div id="css" class="screen">
+            <h1 class="title">CSSアニメーション</h1>
+            <div class="box"></div>
         </div>
         <div id="grid" class="screen">
             <h1 class="title">グリッドアニメーション</h1>
@@ -61,5 +67,6 @@
         <script src="grid.js"></script>
         <script src="graph.js"></script>
         <script src="segtree.js"></script>
+        <script src="test.js"></script>
     </body>
 </html>
