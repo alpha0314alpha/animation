@@ -9,8 +9,14 @@ button {
     font-size: 12px;
     width: 100px;
     height: 35px;
-    background-color: #E0E0E0;
+    background: #E0E0E0;
     border-radius: 10px;
+    transition: transform 0.2s ease-in-out, background 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #BBBBEE;
 }
 
 .title {

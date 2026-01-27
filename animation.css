@@ -1,19 +1,8 @@
 .box {
+    position: absolute;
     width: 100px;
     height: 100px;
-    background: #4ade80;
+    left: calc(50% - 50px);
+    background: green;
     border-radius: 12px;
-    animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(300px);
-    }
-    100% {
-        transform: translateY(0);
-    }
 }
