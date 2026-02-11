@@ -16,10 +16,12 @@
             <button onclick="showScreen('graph')">グラフ</button>
             <button onclick="showScreen('segtree')">セグメント木</button>
         </div>
+
         <div id="css" class="screen">
             <h1 class="title">CSSアニメーション</h1>
             <div class="box"></div>
         </div>
+
         <div id="grid" class="screen">
             <h1 class="title">グリッドアニメーション</h1>
             <button onclick="maze.dfs()">DFS</button>
@@ -28,6 +30,7 @@
             <button onclick="maze.remake()">再作成</button><br>
             <canvas id="gridcanvas" width="600" height="600"></canvas>
         </div>
+
         <div id="graph" class="screen">
             <h1 class="title">グラフアニメーション</h1>
             <button onclick="graph.kruskal()">最小全域木</button>
@@ -39,21 +42,22 @@
             <button onclick="graph.remake(graph.size*2)">再作成</button><br>
             <canvas id="graphcanvas" width="600" height="600"></canvas>
         </div>
+
         <div id="segtree" class="screen">
-            <h1 class="title">セグメント木</h1>
+            <h1 class="title" id="segtree-title">セグメント木</h1>
             <button onclick="(() => {
-                currrentSeg = segtree_sum;
-                currrentSeg.show();
+                currentSeg = segtree_sum;
+                currentSeg.show();
             })()">和</button>
             <button onclick="(() => {
-                currrentSeg = segtree_max;
-                currrentSeg.show();
+                currentSeg = segtree_max;
+                currentSeg.show();
             })()">最大値</button>
-            <button onclick="currrentSeg.reset()">リセット</button>
+            <button onclick="currentSeg.reset()">リセット</button>
             <br>
             <input id="segtree-idx" type="number" min="1" max="8" value="0">
             <input id="segtree-val" type="number" min="-1e8" max="1e8" value="0">
-            <input type="submit" value="更新" onclick="currrentSeg.inputSegtree()">
+            <input type="submit" value="更新" onclick="currentSeg.inputSegtree()">
             <br>
             <canvas id="segtreecanvas" width="600" height="200"></canvas>
         </div>
